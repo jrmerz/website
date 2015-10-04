@@ -1,0 +1,21 @@
+.main {
+  padding: 0 5px;
+}
+
+@media(min-width: 786px) {
+  .main {
+    padding: 0 5%;
+  }
+}
+
+/** Bootstra.386 v3 missing stuff **/
+h1, h2 {
+  color: #fff;
+}
+h1 {
+  text-transform: uppercase;
+  border-bottom: 2px dashed white;
+}
+a {
+  color: #fefe54;
+}
