@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="nav">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,8 +22,8 @@
 </nav>
 
 <script>
-  $(document).on('load', function(){
-    var path = window.location.pathname.replace(/\/$/,'');
-    $('#nav').find('a[href="'+path+'"]').addClass('active');
+  $(document).on('ready', function(){
+    var path = window.location.pathname.replace(/^\//,'').split('/')[0];
+    $('#nav').find('a[href="/'+path+'"]').parent().addClass('active');
   });
 </script>
