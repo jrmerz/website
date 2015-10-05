@@ -3,13 +3,16 @@
 ## Background
 
 I graduated from [UC Davis](http://ucdavis.edu/) with a degree in Computer Science
-and Engineering and have worked at basically UC Davis ever since.  I took a break
-to work at [Stone Cobra](http://www.stonecobra.com/) as well.  You can find most of my day to day work on
- [GitHub](https://github.com/jrmerz) as almost every project I work on, both
- professionally and privately are managed there.
+and Engineering in 2006 and have worked at UC Davis basically ever since.  I took a break
+to work at [Stone Cobra](http://www.stonecobra.com/) as well.  You can find most of my day-to-day
+work on [github.com/jrmerz](https://github.com/jrmerz) as almost every project I work on, both
+ professionally and privately, are managed there.
 
 ## Contact
 <a href="mailto:jrmerz@gmail.com">jrmerz@gmail.com</a>
+
+Feel free to contact me with questions or comments.  I am always interested in
+hearing about new side projects.
 
 ## Social
 

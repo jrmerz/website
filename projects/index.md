@@ -13,7 +13,7 @@ on.
 Most of my latest UC Davis work can be found on GitHub.
 
 
-- [CWS](https://github.com/ucd-cws) (Center for Watershed Sciences)
- - [Website]()
-- [CSTARS](https://github.com/CSTARS)
- - [Website]()
+- [CWS](https://github.com/ucd-cws): Center for Watershed Sciences
+ - [Website](https://watershed.ucdavis.edu/)
+- [CSTARS](https://github.com/CSTARS): The Center for Spatial Technologies and Remote Sensing
+ - [Website](http://www.cstars.ucdavis.edu/)
