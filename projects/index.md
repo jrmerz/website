@@ -6,6 +6,7 @@ Here is an overview of some side projects I have or am actively working on.
 - [Password Vault](/projects/passwordvault)
 - [Markdown Site Generator](/projects/markdownsitegenerator)
 - [Shut Box](/projects/shutbox)
+- [gwt-esri](/projects/gwt-esri)
 
 # UC Davis
 

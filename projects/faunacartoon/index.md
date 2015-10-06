@@ -31,7 +31,7 @@ This is used by Safari on iOS and Chrome on Android to allow to [describe](http:
 your application.  This, combined with HTTPS and a Service Work will have Chrome prompt to install the
 webapp in the latest versions for chrome for android.
 
-# Other Shootouts
+# Other Shout-outs
  - [Google Fonts](https://www.google.com/fonts)
  - [Animate CSS](https://daneden.github.io/animate.css/)
 
