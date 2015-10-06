@@ -1,4 +1,20 @@
 <script src="/resources/bootstra.386/js/bootstrap.js"></script>
 <script>
   _386 = { onePass: false, speedFactor: 1.1, fastLoad: false };
+  console.log('What would be the scientific purpose of killing it?\n\nRevenge - Steve Zissou');
+
+  var contra = [38,38,40,40,37,39,37,39,66,65];
+  var index = 0;
+  $(window).on('keyup', function(e){
+    if( contra[index] == e.which ) {
+      index++;
+    } else {
+      index = 0;
+    }
+
+    if( index == contra.length ) {
+      alert('You WIN!');
+      $('body').addClass('animated').addClass('hinge');
+    }
+  });
 </script>

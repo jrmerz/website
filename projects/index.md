@@ -1,19 +1,18 @@
 # Side Projects
 
-Here is an overview of some of the side projects I have or am actively working
-on.
+Here is an overview of some side projects I have or am actively working on.
 
 - [Fauna Cartoons](/projects/faunacartoon)
 - [Password Vault](/projects/passwordvault)
-- Markdown Site Generator
-- Shut Box
+- [Markdown Site Generator](/projects/markdownsitegenerator)
+- [Shut Box](/projects/shutbox)
 
 # UC Davis
 
-Most of my latest UC Davis work can be found on GitHub.
+Most of my latest UC Davis work can be found on GitHub. [activity](https://github.com/jrmerz?tab=activity).
 
 
-- [CWS](https://github.com/ucd-cws): Center for Watershed Sciences
+- [CWS GitHub Hame](https://github.com/ucd-cws): Center for Watershed Sciences
  - [Website](https://watershed.ucdavis.edu/)
-- [CSTARS](https://github.com/CSTARS): The Center for Spatial Technologies and Remote Sensing
+- [CSTARS GitHub Home](https://github.com/CSTARS): The Center for Spatial Technologies and Remote Sensing
  - [Website](http://www.cstars.ucdavis.edu/)

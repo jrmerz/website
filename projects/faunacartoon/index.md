@@ -28,8 +28,7 @@ them (Chrome) to have a customized offline screen.
 ## Webapp Manifest
 
 This is used by Safari on iOS and Chrome on Android to allow to [describe](http://www.w3.org/TR/appmanifest/)
-your application and allow for the 'Add to Home Screen' button to show.  This,
-combined with HTTPS and a Service Work will have Chrome prompt to install the
+your application.  This, combined with HTTPS and a Service Work will have Chrome prompt to install the
 webapp in the latest versions for chrome for android.
 
 # Other Shootouts
