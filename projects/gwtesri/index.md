@@ -8,7 +8,7 @@ when building complex online GIS applications as you can use JAVA to build the a
 
 Not to dive into a language argument, but there is something to be
 said about strongly typed, OO languages like JAVA over JavaScript.  I think the
-real interesting aspect is how GWT, a compile to JAVA language, sort of went out
+real interesting aspect is how GWT, a compile to JS language, sort of went out
 of style for a bit.  But now seems to be having a huge come back.  Between ES6/ES2015+
 transpilers, Grunt/Gulp concat-minify-uglify or strait compile to languages like
 CoffeeScript, TypeScript and JSX the world seems to have slowly swung back into favor
