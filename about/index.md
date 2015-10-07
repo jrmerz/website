@@ -65,6 +65,10 @@ Stuff I use (for better or worse).
 - [G+](https://plus.google.com/101609841353936434386/posts)
 - [LinkedIn](https://www.linkedin.com/pub/justin-merz/5/578/b66)
 
+# Old Ramblings
+
+- [Blog](http://justinexb.blogspot.com/) (Semi Retired)
+
 # This site
 
 This site was generated using a [custom markdown site generator](/projects/markdownsitegenerator)
