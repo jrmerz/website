@@ -6,7 +6,6 @@ Here is an overview of some side projects I have or am actively working on.
 - [Password Vault](/projects/passwordvault)
 - [Markdown Site Generator](/projects/markdownsitegenerator)
 - [Shut Box](/projects/shutbox)
-- [gwt-esri](/projects/gwtesri)
 
 # UC Davis
 
@@ -17,3 +16,11 @@ Most of my latest UC Davis work can be found on GitHub. [activity](https://githu
  - [Website](https://watershed.ucdavis.edu/)
 - [CSTARS GitHub Home](https://github.com/CSTARS): The Center for Spatial Technologies and Remote Sensing
  - [Website](http://www.cstars.ucdavis.edu/)
+
+## UCD Open Source Projects
+
+While most of the projects I do at UCD are under an open license, here is a list
+of more generic projects that can be used elsewhere.
+
+- [gwt-esri](/projects/gwtesri)
+- [mongo-query-engine](/projects/mongoqueryengine)
