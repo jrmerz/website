@@ -18,7 +18,7 @@ Most of my latest UC Davis work can be found on GitHub. [activity](https://githu
 
 ## UCD Open Source Projects
 
-While most of the projects I do at UCD are under an open license, here is a list
+Most of the projects I do at UCD are under an open license, here is a list
 of more generic projects that can be used elsewhere.
 
 - [gwt-esri](/projects/gwtesri)
@@ -36,5 +36,6 @@ of more generic projects that can be used elsewhere.
 - [CALVIN Network App](http://cwn.casil.ucdavis.edu/) - [CWS](https://watershed.ucdavis.edu/)
 - [Map Viewer (Demo)](http://cstars.github.io/ceres-maps/) - [CWS](https://watershed.ucdavis.edu/)
  - Built on [gwt-esri](https://github.com/CSTARS/gwt-esri) and [gwt-gis](https://github.com/CSTARS/gwt-gis)
-- [EcoSIS](http://dev-search.ecospectra.org/) - [ECOSIS](http://labs.russell.wisc.edu/townsend/tag/ecosis/)
+- [EcoSIS Search](http://dev-search.ecospectra.org/) - [EcoSIS](http://labs.russell.wisc.edu/townsend/tag/ecosis/)
 - [Spatial CIMIS](http://cimis-mobile.casil.ucdavis.edu/) - [CWS](https://watershed.ucdavis.edu/)
+- [DWRAT](http://watershed.ice.ucdavis.edu/dwrat/) - [CWS](https://watershed.ucdavis.edu/)
