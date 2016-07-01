@@ -1,6 +1,6 @@
 # Local Markets
 
-Local Markets [local-market.org](https://local-market.org) is 'progressive webapp'
+Local Markets [local-markets.justinmerz.net](https://local-markets.justinmerz.net) is 'progressive webapp'
 designed around helping you find local farmers markets.  The app is designed around
 the idea that markets happen once our twice a week, but you may need food sooner than
 that.  So the app displays results ordered by the next time the market opens for
