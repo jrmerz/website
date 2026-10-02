@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Justin Merz</title>
+  <meta name="description" content="Justin Merz - Senior Technology Architect. An interactive terminal portfolio." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/crt.css" />
+  <link rel="stylesheet" href="/css/terminal.css" />
+  <link rel="stylesheet" href="/css/menubar.css" />
+</head>
+<body>
+  <nav id="menubar" class="menubar">
+    <ul class="menubar-list">
+      <li class="menubar-item">
+        <button class="menubar-trigger" type="button">File</button>
+        <ul class="menubar-dropdown">
+          <li><button data-command="clear">Clear screen</button></li>
+          <li><button data-command="contact">Contact</button></li>
+        </ul>
+      </li>
+      <li class="menubar-item">
+        <button class="menubar-trigger" type="button">About</button>
+        <ul class="menubar-dropdown">
+          <li><button data-command="whoami">whoami</button></li>
+          <li><button data-command="about">Full bio</button></li>
+          <li><button data-command="education">Education</button></li>
+        </ul>
+      </li>
+      <li class="menubar-item">
+        <button class="menubar-trigger" type="button">Work</button>
+        <ul class="menubar-dropdown">
+          <li><button data-command="resume">Resume</button></li>
+          <li><button data-command="skills">Skills</button></li>
+          <li><button data-command="projects">Projects</button></li>
+          <li><button data-command="publications">Publications</button></li>
+        </ul>
+      </li>
+      <li class="menubar-item">
+        <button class="menubar-trigger" type="button">Play</button>
+        <ul class="menubar-dropdown">
+          <li><button data-command="snake">Snake</button></li>
+          <li><button data-command="fortune">Fortune</button></li>
+        </ul>
+      </li>
+      <li class="menubar-item">
+        <button class="menubar-trigger" type="button">Help</button>
+        <ul class="menubar-dropdown">
+          <li><button data-command="help">Command list</button></li>
+        </ul>
+      </li>
+    </ul>
+    <button id="menubar-toggle" class="menubar-toggle" type="button" aria-label="Toggle menu">&equiv; MENU</button>
+  </nav>
+
+  <div id="crt-overlay" class="crt-overlay" aria-hidden="true"></div>
+
+  <main id="terminal" class="terminal">
+    <div id="screen" class="screen" aria-live="polite"></div>
+    <div id="game-layer" class="game-layer" hidden>
+      <canvas id="game-canvas"></canvas>
+    </div>
+    <div class="input-row">
+      <span id="prompt-label" class="prompt-label"></span>
+      <input
+        id="cmd-input"
+        class="cmd-input"
+        type="text"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        aria-label="Terminal command input"
+      />
+    </div>
+  </main>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

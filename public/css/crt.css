@@ -1,0 +1,66 @@
+:root {
+  --bg: #0a0e0a;
+  --fg-primary: #33ff66;
+  --fg-dim: #1f8f3c;
+  --fg-accent: #2be8ff;
+  --fg-accent-2: #ff2bd6;
+  --fg-warn: #ffb000;
+  --fg-error: #ff5c5c;
+  --fg-name: #ff9933;
+  --font-display: 'VT323', monospace;
+  --font-body: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+:root[data-theme='overdrive'] {
+  --bg: #0d0115;
+  --fg-primary: #ff2bd6;
+  --fg-dim: #a3179b;
+  --fg-accent: #2be8ff;
+  --fg-accent-2: #33ff66;
+  --fg-warn: #ffe600;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--fg-primary);
+  font-family: var(--font-body);
+}
+
+/* Scanline + vignette overlay, purely decorative. */
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  mix-blend-mode: overlay;
+}
+
+.crt-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+html:not(.reduced-motion) body {
+  animation: flicker 6s infinite steps(1);
+}
+
+@keyframes flicker {
+  0%, 92%, 100% { filter: brightness(1); }
+  93% { filter: brightness(1.08); }
+  94% { filter: brightness(0.92); }
+  95% { filter: brightness(1.03); }
+}
+
+html.reduced-motion .crt-overlay {
+  display: none;
+}

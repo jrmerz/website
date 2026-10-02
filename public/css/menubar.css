@@ -1,0 +1,109 @@
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--fg-dim);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  padding: 0 0.5rem;
+}
+
+.menubar-list {
+  display: flex;
+}
+
+.menubar-item {
+  position: relative;
+}
+
+.menubar-trigger {
+  padding: 0.5rem 0.9rem;
+  color: var(--fg-primary);
+}
+
+.menubar-trigger:hover,
+.menubar-trigger:focus-visible {
+  color: var(--bg);
+  background: var(--fg-primary);
+}
+
+.menubar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 11rem;
+  background: var(--bg);
+  border: 1px solid var(--fg-dim);
+}
+
+.menubar-item:hover .menubar-dropdown,
+.menubar-item:focus-within .menubar-dropdown {
+  display: block;
+}
+
+.menubar-dropdown li button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.9rem;
+  color: var(--fg-primary);
+}
+
+.menubar-dropdown li button:hover,
+.menubar-dropdown li button:focus-visible {
+  color: var(--bg);
+  background: var(--fg-accent);
+}
+
+.menubar-toggle {
+  display: none;
+  margin-left: auto;
+  padding: 0.5rem 0.75rem;
+  color: var(--fg-accent);
+}
+
+@media (max-width: 700px) {
+  .menubar-toggle {
+    display: block;
+  }
+
+  .menubar-list {
+    display: none;
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--bg);
+    border-bottom: 1px solid var(--fg-dim);
+  }
+
+  .menubar.open .menubar-list {
+    display: flex;
+  }
+
+  .menubar-item {
+    border-top: 1px solid var(--fg-dim);
+  }
+
+  .menubar-dropdown {
+    position: static;
+    display: block;
+    border: none;
+  }
+
+  .menubar.open .menubar-dropdown {
+    display: none;
+  }
+
+  .menubar-item.expanded .menubar-dropdown {
+    display: block;
+  }
+}

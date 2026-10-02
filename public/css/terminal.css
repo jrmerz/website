@@ -1,0 +1,92 @@
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem 1.25rem 0.5rem;
+  padding-top: calc(2.5rem + 1rem);
+}
+
+.screen {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 1.6vw, 1rem);
+  line-height: 1.4;
+}
+
+.line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-shadow: 0 0 2px currentColor, 0 0 6px currentColor;
+}
+
+.line.echo {
+  color: var(--fg-accent);
+}
+
+.line.error {
+  color: var(--fg-error);
+}
+
+.line.accent {
+  color: var(--fg-accent-2);
+}
+
+.line.boot {
+  color: var(--fg-dim);
+}
+
+.line.banner {
+  font-family: var(--font-body);
+  font-size: clamp(0.4rem, 1.6vw, 0.85rem);
+  line-height: 1.15;
+  text-shadow: none;
+  letter-spacing: 0;
+  color: var(--fg-name);
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5ch;
+  padding: 0.5rem 0 1rem;
+  font-family: var(--font-body);
+  flex-shrink: 0;
+}
+
+.prompt-label {
+  color: var(--fg-accent);
+  white-space: nowrap;
+}
+
+.cmd-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  caret-color: var(--fg-primary);
+}
+
+.game-layer[hidden] {
+  display: none;
+}
+
+.game-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.game-layer canvas {
+  border: 1px solid var(--fg-dim);
+  image-rendering: pixelated;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .terminal {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
