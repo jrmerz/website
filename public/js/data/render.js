@@ -106,10 +106,7 @@ export function renderBio() {
     `${profile.name} - ${profile.title}`,
     `${profile.location}`,
     '',
-    ...profile.aboutParagraphs,
-    '',
-    '[meta] Fun fact: this bio was written by an AI describing a human\'s 20-year career.',
-    'The irony is not lost on either of us.',
+    ...profile.aboutParagraphs
   ].join('\n');
 }
 
