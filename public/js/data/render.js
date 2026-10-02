@@ -139,8 +139,8 @@ export function renderEducation() {
 export function renderSkillGroup(group) {
   const lines = [`# ${group.title}`];
   for (const c of group.categories) {
-    lines.push(`  ${c.category}`);
-    lines.push(`    ${c.detail}`);
+    lines.push(`## ${c.category}`);
+    for (const item of c.items) lines.push(`  - ${item}`);
   }
   return lines.join('\n');
 }

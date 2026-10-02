@@ -1,5 +1,6 @@
 import { parseCommandLine } from './parser.js';
 import { resolveCompletion, splitLastToken, splitPathToken } from './completion.js';
+import { parseMarkdownLine } from './markdown.js';
 
 const MAX_HISTORY = 100;
 
@@ -59,8 +60,10 @@ export class Terminal {
    */
   printLine(text = '', opts = {}) {
     const line = document.createElement('div');
-    line.className = `line${opts.className ? ` ${opts.className}` : ''}`;
-    line.textContent = text;
+    const { className: mdClassName, fragment, indent } = parseMarkdownLine(text);
+    line.className = `line${opts.className ? ` ${opts.className}` : ''}${mdClassName ? ` ${mdClassName}` : ''}`;
+    if (indent > 0) line.style.paddingLeft = `${indent}ch`;
+    line.appendChild(fragment);
     this.screenEl.appendChild(line);
     this.scrollToBottom();
   }

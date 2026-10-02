@@ -36,6 +36,41 @@
   color: var(--fg-dim);
 }
 
+.line.md-h1 {
+  color: var(--fg-accent-2);
+  font-weight: 700;
+  margin-top: 0.5em;
+  padding-bottom: 0.15em;
+  border-bottom: 1px solid var(--fg-dim);
+}
+
+.line.md-h2 {
+  color: var(--fg-accent);
+  font-weight: 700;
+  margin-top: 0.2em;
+}
+
+.line.md-bullet {
+  color: var(--fg-primary);
+  display: flex;
+  gap: 0.6ch;
+}
+
+.line.md-bullet .bullet-marker {
+  flex: 0 0 auto;
+  color: var(--fg-dim);
+}
+
+.line.md-bullet .bullet-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.line strong {
+  font-weight: 700;
+  color: var(--fg-accent-2);
+}
+
 .line.banner {
   font-family: var(--font-body);
   font-size: clamp(0.4rem, 1.6vw, 0.85rem);
